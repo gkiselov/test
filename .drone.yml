@@ -1,0 +1,7 @@
+pipeline:
+  resolve:
+    image: alpine
+    commands:
+      - echo "Hello world"
+    when:
+      status: [ success, failure ]
